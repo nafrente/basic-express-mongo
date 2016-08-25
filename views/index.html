@@ -1,0 +1,22 @@
+<!doctype html>
+<html class="no-js" lang="en_CA">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Basic App coming soon...</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+      <!-- Place favicon.ico in the root directory -->
+      <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    </head>
+    <body>
+      <h1>Browsers</h1>
+      {% for browser in browsers %}
+      <li><a href="{{ browser.link }}">{{ browser.name }} by {{ browser.usage }}% of internet users</a></li>
+      {% else %}
+      <li>No browser found.</li>
+      {% endfor %}
+      <!-- <script src="js/main.js"></script> -->
+    </body>
+</html>
